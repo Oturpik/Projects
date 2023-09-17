@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happiness Index Database</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- <script src="script.js"></script> -->
+</head>
+<body>
+    <h1>Happiness Index Database</h1>
+
+    <!-- Main Page Buttons -->
+    <div id="main-buttons">
+        <button id="enter-button">Enter Data</button>
+        <button id="search-button">Search Data</button>
+        <button id="edit-button">Edit Data</button>
+    </div>
+
+    <!-- Data Entry Interface (Hidden by Default) -->
+    <div id="data-entry" class="hidden">
+        <h2>Enter Data</h2>
+        <form id="entry-form">
+            <!-- Input fields for data entry here -->
+            <input type="text" id="country-input" placeholder="Country" required>
+            <input type="text" id="region-input" placeholder="Region" required>
+            <input type="number" id="HappinessScore-input" placeholder="Happiness Score" step="0.01" required>
+            <input type="number" id="GDP-input" placeholder="GDP-Per-Capita" step="0.01" required>
+            <input type="number" id="SocialSupport-input" placeholder="Social Support" step="0.01" required>
+            <input type="number" id="LifeExpectancy-input" placeholder="Life Expectancy" step="0.01" required>
+            <input type="number" id="Freedom-input" placeholder="Freedom of Choice" step="0.01" required>
+            <input type="number" id="Generosity-input" placeholder="Generosity" step="0.01" required>
+            <input type="number" id="Corruption-input" placeholder="Corruption Score" step="0.01" required>
+            <button type="button" id="add-button">Add Entry</button>
+        </form>
+    </div>
+
+    <!-- Data Search Interface (Hidden by Default) -->
+    <div id="data-search" class="hidden">
+        <h2>Search Data</h2>
+        <form id="search-form">
+            <!-- Input fields for data search here -->
+            <input type="text" id="search-input" placeholder="Search by Country">
+            <button type="button" id="search-data-button">Search</button>
+        </form>
+        <!-- Display search results here -->
+    </div>
+
+    <!-- Data Edit Interface (Hidden by Default) -->
+    <div id="data-edit" class="hidden">
+        <h2>Edit Data</h2>
+        <form id="edit-form">
+            <!-- Input fields for data editing here -->
+            <input type="text" id="edit-country-input" placeholder="Country to Edit">
+            <!-- Add input fields for editing other columns -->
+            <input type="number" id="edit-happiness-score-input" placeholder="Happiness Score" step="0.01" required>
+            <input type="number" id="edit-gdp-input" placeholder="GDP-Per-Capita" step="0.01" required>
+            <!-- Add more input fields for other columns you want to edit -->
+            <button type="button" id="edit-data-button">Edit Entry</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
