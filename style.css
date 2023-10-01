@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+body{
+    background-color: lightestnavy;
+
+}
+
+.main-content{
+    min-height: 100vh;
+    width: 99%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.left-section{
+    grid-column: span 2;
+    height: 100%;
+    background-color: 8892b0;
+}
+.right-section{
+    grid-column: span 5;
+    height: 100%;
+    background: color #112240;
+}
+
+.left-content{
+    padding: 2rem 3rem;
+}
+.profile{
+    width: 100%;
+    border-bottom: 1px solid #112240;
+}
+
+.image{
+    width: 100%;
+    text-align: center;
+}
+.profile img{
+    width: 100%;
+    border-radius: 50%;
+    border: 8px solid #112240;
+    
+}
+
+.name{
+    font-size: 1.5rem;
+    color: #2D3748;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.2rem 0;
+}
+
+.career{
+    font-size: 1rem;
+    color: #2D3748;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 1rem;
+}
+/*check the repo*/
+.main-title{
+    font-size: 1.3em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #2D3748;
+    padding-top: 2rem;
+}
+.contact-info ul{
+    padding-top: 1.1rem;
+}
+.contact-info ul li{
+    padding: 0.1rem;
+    display: flex;
+    align-items: center;
+    color: #2D3748;
+}
+.contact-info ul li i{
+    padding: 0.8rem;
+    font-size: .9rem;
+    color: #2D3748;
+}
+
+.skills-section ul{
+    padding-top: 1.1rem;
+}
+
+.skills-section ul li{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    padding: .4rem 0;
+
+}
+
+.progress-bar{
+    width: 100%;
+    height: .2rem;
+    background-color: #2D3748;
+    position: relative;
+    border-radius: 12px;
+}
+
+.progress{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: #2D9CDB;
+    border-radius: 12px;
+}
+
+.AWS-progress{
+    width: 80%;
+}
+.Cisco-progress{
+    width: 99%;
+}
+.Networking-progress{
+    width: 99%;
+}
+.Docker-progress{
+    width: 60%;
+}
+.Kubernetes-progress{
+    width: 70%;
+}
+
+.Skill-title{
+    text-transform:uppercase ;
+    color: #2D3748;
+    font-size: 1rem;
+    padding-right: .5rem;
+}
+
+.sub-title{
+    padding-top: .5rem;
+    text-transform: uppercase;
+    color: #2D3748;
+    font-size: 1rem;
+    padding-right: .5rem;
+}
+
+.sub-para{
+    color: #2D3748;
+    padding: .4rem 0;
+}
+
+.references-section li{
+    color: #2D3748;
+    font-size: .9rem;
+    padding: 0.3rem 0;
+}
+
+.references-section li i{
+    padding: .5rem;
+    font-size: .7rem;
+    color: #112240;
+}
+
+.right-main-content{
+    padding: 2rem 3rem;
+}
+
+.right-title{
+    letter-spacing: .9px;
+    text-transform: uppercase;
+    color: #2D3748;
+    margin-bottom: .9rem;
+    position: relative;
+    font-size: 1.2rem;
+}
+.right-title::after{
+    top: 50%;
+    content:"";
+    position: absolute;
+    width: 60%;
+    height:.1rem;
+    border-radius: 5px;
+    background-color: #2D9CDB;
+    right: 0;
+    transform: translateY(-50%);
+
+}
+
+.para{
+    line-height: 1.5rem;
+    color:#112240;
+    font-size: 1rem;
+    padding-bottom: 0.8rem;
+}
+.sect{
+    padding-bottom: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.timeline{
+    display: grid;
+    grid-column: span 1.5;
+}
+.tl-title{
+    letter-spacing: 1px;
+    font-size: 1rem;
+    color: #2D3748;
+    text-transform: uppercase;
+}
+
+.tl-title-2{
+    letter-spacing: 1px;
+    font-size: 1rem;
+    color: #718096;
+    text-transform: uppercase;
+    padding-bottom: .8rem;
+}
+
+.roles ul li{
+    list-style-type:disc; 
+    margin-bottom: 10px; 
+    margin-left: 20px; 
+
+}
+.tl-content{
+    border-left: 1px solid #a8b2d1;
+    padding-left: 2rem;
+    position: relative;
+    padding-bottom: 2rem;
+    
+}
+.left-tl-content{
+    grid-column: span 1.5;
+}
+.right-tl-content{
+    grid-column: span 4;
+}
+
+.tl-title-2::before{
+    content:"";
+    position: absolute;
+    width: .5rem;
+    height: .5rem;
+    background-color: #2D9CDB;
+    border-radius: 50%;
+    left: 0;
+    transform: translateX(-50%);
+
+
+}
+
+.word-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .8rem;
+}
+
+.left-word {
+    text-align: left;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    color: #718096;
+    text-transform: uppercase;
+}
+
+.right-word {
+    text-align: right;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    color: #718096;
+    text-transform: uppercase;
+}
+.word-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.left-word {
+    text-align: left;
+    letter-spacing: 1px;
+    font-size: .9rem;
+    color: black;
+    font-weight: bold;
+}
+
+.right-word {
+    text-align: right;
+    letter-spacing: 1px;
+    font-size: .9rem;
+    color: black;
+    font-weight: bold;
+}
+
+.certificates-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.left-cert {
+    text-align: left;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    color: black;
+}
+
+.right-cert {
+    text-align: right;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    color: black;
+}
+
+.desc{
+    list-style: disc; /* set bullet style to disc */
+    margin-bottom: 20px; /* add margin for spacing */
+}
+
+/*Media Queries*/
+@media screen and (max-width:823px){
+    .right-title::after{
+        width: 40%;
+    }
+    .left-section{
+        grid-column: span 3;
+    }
+    .right-section{
+        grid-column: span 4;
+    }
+}
+@media screen and (max-width:780px){
+    .timeline{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .left-section{
+        grid-column: span 3;
+    }
+    .right-section{
+        grid-column: span 4;
+    }
+}
+@media screen and (max-width:1200px) {
+    .main-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .profile img{
+        width: 30%;
+    }
+}
